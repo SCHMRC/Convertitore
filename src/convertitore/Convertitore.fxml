@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="convertitore.ConvertitoreController">
+   <top>
+      <Label text="Convertitore" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveE" text="Salva">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="txtFactor1" promptText="Modifica Fattore di Conversione">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Euro">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtEuro" promptText="inserisci l'importo in Euro">
+                     <HBox.margin>
+                        <Insets left="11.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnDollari" mnemonicParsing="false" onAction="#handleDollari" text="Converti">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Dollari">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtConvDollari" disable="true">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="btnSave2" mnemonicParsing="false" onAction="#saveD" text="Salva">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="txtFactor2" promptText="Modifica Fattore di Conversione">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Dollari">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtDollari" promptText="inserisci l'importo in Dollari" />
+                  <Button fx:id="btnEuro" mnemonicParsing="false" onAction="#handleEuro" text="Converti">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Euro">
+                     <HBox.margin>
+                        <Insets left="17.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtConvEuro" disable="true">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
