@@ -63,7 +63,9 @@ public class ConvertitoreController {
     }
     
     @FXML
-    void saveD(ActionEvent event) {
+    void saveD(ActionEvent event) throws IOException {
+    	model.setDollaro(Double.parseDouble(txtFactor2.getText()));
+    	model.scrivi(txtFactor2.getText());
 
     }
 
